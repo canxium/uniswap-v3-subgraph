@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: cerium
+    network: canxium
     source:
-      address: '0xed97a1C50F4863D4040F2684300D950d91912B39'
+      address: '0xbccB72C341ff1BdFDeAEb5Ba1EE0aCF9cA61E83C'
       abi: Factory
-      startBlock: 380936
+      startBlock: 1891615
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -37,11 +37,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: cerium
+    network: canxium
     source:
-      address: '0x3816356508cEC1714b66F0FFBea27E0407961121'
+      address: '0xC395e243c85195690583dFD5Eb4ed2C3AD14971F'
       abi: NonfungiblePositionManager
-      startBlock: 380961
+      startBlock: 1891627
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: cerium
+    network: canxium
     source:
       abi: Pool
     mapping:
